@@ -6,12 +6,16 @@
 - Hive is the version 2.3.2
 
 ## Before Install
-Use DNS Server or update /etc/hosts for all servers
+1. Use DNS Server or update /etc/hosts for all servers
+2. //todo 配置所有节点/etc/hosts
+3. //todo 配置master私钥
 
 ## Install Hadoop
 1. Download Hadoop to any path
 
-2. Update the {{ download_path }} in vars/var_basic.yml
+2. //todo 配置JAVA_HOME
+
+3. Update the {{ download_path }} in vars/var_basic.yml
 ```
 download_path: "/home/pippo/Downloads" # your local path 
 hadoop_version: "3.0.0" # your hadoop version
@@ -21,6 +25,7 @@ hadoop_tmp: "/home/hadoop/tmp"
 hadoop_dfs_name: "/home/hadoop/dfs/name"
 hadoop_dfs_data: "/home/hadoop/dfs/data"
 ```
+
 
 3. Use ansible template to generate the hadoop configration, so If your want to add more properties, just update the vars/var_basic.yml.default is 
 
@@ -58,3 +63,5 @@ ansible-playbook -i hosts/host hive.yml
 ### License
 
 GNU General Public License v3.0
+
+### //todo Run Hadoop
