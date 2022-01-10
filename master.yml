@@ -11,6 +11,7 @@
      disable_firewall: false
      install_hadoop: true
      config_hadoop: true
+     start_hadoop: true
      ansible_os_family: 'RedHat'
   roles:
     - user

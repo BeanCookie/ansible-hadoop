@@ -53,7 +53,11 @@ ansible-playbook -i hosts/host workers.yml -e "master_ip=172.16.251.70 master_ho
 ### Install hive
 1. **Create database first and give right authority**
 
+
+
 2. run it
+
+3. //todo https://github.com/chuqbach/Big-Data-Installation/issues/1
 
 ```
 ansible-playbook -i hosts/host hive.yml

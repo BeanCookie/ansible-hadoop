@@ -1,0 +1,3 @@
+---
+- name: Start Hadoop
+  shell: su - {{ user }} -c "start-all.sh"

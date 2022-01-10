@@ -1,8 +1,8 @@
 ---
 
 # hive basic vars
-download_path: "/home/pippo/Downloads"
-hive_version: "2.3.2"
+download_path: "/Users/luzhong/Downloads"
+hive_version: "3.1.2"
 hive_path: "/home/hadoop"
 hive_config_path: "/home/hadoop/apache-hive-{{hive_version}}-bin/conf"
 hive_tmp: "/home/hadoop/hive/tmp"

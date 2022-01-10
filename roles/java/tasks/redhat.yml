@@ -7,4 +7,4 @@
   template: src=java_home.sh dest=/etc/profile.d
 
 - name: Set Java Home Script
-  shell: bash /etc/profile.d/java_home.sh
+  shell: bash /etc/profile.d/java_home.sh mode=755

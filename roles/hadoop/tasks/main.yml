@@ -16,5 +16,8 @@
 - include: config_hadoop.yml
   when: config_hadoop
 
+- include: start_hadoop.yml
+  when: start_hadoop
+
 - include: redhat.yml
   when: ansible_os_family == 'RedHat'
