@@ -1,0 +1,13 @@
+---
+- hosts: spark
+  remote_user: root
+  vars_files:
+   - vars/user.yml
+   - vars/var_basic.yml
+   - vars/var_master.yml
+   - vars/var_spark.yml
+  vars:
+     install_spark: true
+     config_spark: true
+  roles:
+  - spark

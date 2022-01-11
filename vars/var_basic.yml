@@ -38,6 +38,26 @@ core_site_properties:
     "name":"io.file.buffer.size",
     "value":"131072"
   }
+  - {
+    "name":"fs.oss.endpoint",
+    "value":"https://oss-cn-hangzhou.aliyuncs.com"
+  }
+  - {
+    "name":"fs.oss.accessKeyId",
+    "value":"***"
+  }
+  - {
+    "name":"fs.oss.accessKeySecret",
+    "value":"***"
+  }
+  - {
+    "name":"fs.oss.impl",
+    "value":"org.apache.hadoop.fs.aliyun.oss.AliyunOSSFileSystem"
+  }
+  - {
+    "name":"fs.oss.buffer.dir",
+    "value":"/tmp/oss"
+  }
 
 dfs_namenode_httpport: 9001
 hdfs_site_properties:

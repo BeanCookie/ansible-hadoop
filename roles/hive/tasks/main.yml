@@ -1,5 +1,5 @@
 ---
-- name: Create Hadoop Path
+- name: Create Hive Path
   file: 
     path: "{{ item }}"
     owner: "{{ user }}"
@@ -8,7 +8,6 @@
     mode: 0755
   with_items:
     - "{{ hive_create_path }}"
-
 
 - include: install_hive.yml
   when: install_hive

@@ -1,0 +1,6 @@
+---
+- name: Copy Spark
+  copy: src={{ download_path }}/spark-{{spark_version}}-bin-without-hadoop dest=/tmp owner={{ user }} mode=755
+  
+- name: Unzip Spark
+  shell: "tar zxf /tmp/spark-{{spark_version}}-bin-without-hadoop.tar.gz -C {{ spark_path }}"

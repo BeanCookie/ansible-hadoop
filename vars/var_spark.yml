@@ -1,0 +1,14 @@
+---
+
+# hive basic vars
+download_path: "/Users/luzhong/Downloads"
+spark_version: "2.4.8"
+spark_path: "/home/hadoop"
+spark_config_path: "/home/hadoop/spark-{{spark_version}}-bin-without-hadoop/conf"
+spark_tmp: "/home/hadoop/spark/tmp"
+
+spark_create_path:
+  - "{{ spark_tmp }}"
+  
+spark_memory: 4096M
+spark_cores: 4
