@@ -7,9 +7,10 @@
   vars:
      add_user: true
      generate_key: true
-     open_firewall: true
-     disable_firewall: false
      install_hadoop: true
+     install_firewall: false
+     open_firewall: false
+     disable_firewall: false
      config_hadoop: true
      start_hadoop: true
      ansible_os_family: 'RedHat'

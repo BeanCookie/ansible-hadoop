@@ -17,8 +17,8 @@
 
 3. Update the {{ download_path }} in vars/var_basic.yml
 ```
-download_path: "/home/pippo/Downloads" # your local path 
-hadoop_version: "3.0.0" # your hadoop version
+download_path: "/Users/luzhong/Downloads" # your local path 
+hadoop_version: "3.2.2" # your hadoop version
 hadoop_path: "/home/hadoop" # default in user "hadoop" home
 hadoop_config_path: "/home/hadoop/hadoop-{{hadoop_version}}/etc/hadoop"
 hadoop_tmp: "/home/hadoop/tmp"
@@ -46,7 +46,7 @@ master_hostname: your hadoop master hostname
 
 above two variables must be same like your real hadoop master
 
-ansible-playbook -i hosts/host workers.yml -e "master_ip=172.16.251.70 master_hostname=hadoop-master"
+ansible-playbook -i hosts/host workers.yml -e "master_ip=***.***.***.*** master_hostname=master"
 
 ```
 

@@ -1,10 +1,12 @@
 ---
 - name: Install OpenJdk
+  become: true
   apt: name={{ item }} state=present
   with_items: "{{ java_packages }}"
 
 - name: Copy Java Home Script
-  template: src=java_home.sh dest=/etc/profile.d
+  become: true
+  template: src=java_home.sh dest=/etc/profile.d mode=755
 
 - name: Set Java Home Script
   shell: bash /etc/profile.d/java_home.sh mode=755

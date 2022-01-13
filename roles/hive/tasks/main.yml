@@ -1,5 +1,6 @@
 ---
 - name: Create Hive Path
+  become: true
   file: 
     path: "{{ item }}"
     owner: "{{ user }}"

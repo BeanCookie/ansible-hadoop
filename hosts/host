@@ -1,9 +1,9 @@
 [master]
-192.168.31.201
+10.144.201.153 ansible_ssh_user=op
 [workers]
-192.168.31.202
-192.168.31.203
+10.144.201.154 ansible_ssh_user=op
+10.144.201.155 ansible_ssh_user=op
 [hive]
-192.168.31.201
+10.144.201.153 ansible_ssh_user=op
 [spark]
-192.168.31.201
+10.144.201.153 ansible_ssh_user=op

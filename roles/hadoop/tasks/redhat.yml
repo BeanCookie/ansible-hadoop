@@ -1,6 +1,7 @@
 ---
 - name: Install Firewalld
   apt: name=firewalld state=present
+  when: install_firewall
   ignore_errors: true
 
 - name: Open Firewall

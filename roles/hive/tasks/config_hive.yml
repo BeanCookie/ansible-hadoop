@@ -1,8 +1,10 @@
 ---
 - name: Copy Hive Site
+  become: true
   template: src=hive-site.xml dest={{ hive_config_path }} mode=644 owner={{ user }} group = {{ group }}
 
 - name: Copy Hive Env Script
+  become: true
   template: src=hive_env.sh dest=/etc/profile.d/ mode=755
 
 - name: Set Hive Env

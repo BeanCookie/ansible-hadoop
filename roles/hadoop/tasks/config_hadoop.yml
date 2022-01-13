@@ -1,20 +1,26 @@
 ---
 - name: Copy Hadoop core-site.xml
+  become: true
   template: src=core-site.xml dest={{ hadoop_config_path }} mode=644 owner={{ user }} group = {{ group }}
 
 - name: Copy Hadoop hdfs-site.xml
+  become: true
   template: src=hdfs-site.xml dest={{ hadoop_config_path }} mode=644 owner={{ user }} group = {{ group }}
 
 - name: Copy Hadoop mapred-site.xml
+  become: true
   template: src=mapred-site.xml dest={{ hadoop_config_path }} mode=644 owner={{ user }} group = {{ group }}
 
 - name: Copy Hadoop yarn-site.xml
+  become: true
   template: src=yarn-site.xml dest={{ hadoop_config_path }} mode=644 owner={{ user }} group = {{ group }}
 
 - name: Copy Hadoop workers
+  become: true
   template: src=workers dest={{ hadoop_config_path }} mode=644 owner={{ user }} group = {{ group }}
 
 - name: Copy Hadoop Env Script
+  become: true
   template: src=hadoop_env.sh dest=/etc/profile.d/ mode=755
 
 - name: Set Hadoop Env

@@ -3,9 +3,9 @@
 # hive basic vars
 download_path: "/Users/luzhong/Downloads"
 spark_version: "2.4.8"
-spark_path: "/home/hadoop"
-spark_config_path: "/home/hadoop/spark-{{spark_version}}-bin-without-hadoop/conf"
-spark_tmp: "/home/hadoop/spark/tmp"
+spark_path: "/opt/service"
+spark_config_path: "/opt/service/spark-{{spark_version}}-bin-without-hadoop/conf"
+spark_tmp: "/home/op/tmp"
 
 spark_create_path:
   - "{{ spark_tmp }}"

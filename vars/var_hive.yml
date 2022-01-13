@@ -3,9 +3,9 @@
 # hive basic vars
 download_path: "/Users/luzhong/Downloads"
 hive_version: "3.1.2"
-hive_path: "/home/hadoop"
-hive_config_path: "/home/hadoop/apache-hive-{{hive_version}}-bin/conf"
-hive_tmp: "/home/hadoop/hive/tmp"
+hive_path: "/opt/service"
+hive_config_path: "/opt/service/apache-hive-{{hive_version}}-bin/conf"
+hive_tmp: "/home/op/tmp"
 
 hive_create_path:
   - "{{ hive_tmp }}"
@@ -22,7 +22,7 @@ hive_hdfs_path:
 hive_logging_operation_log_location: "{{ hive_tmp }}/{{ user }}/operation_logs"
 
 # database
-db_type: "postgres"
+db_type: "mysql"
 hive_connection_driver_name: "com.mysql.jdbc.Driver"
 hive_connection_host: "192.168.31.201"
 hive_connection_port: "3306"
